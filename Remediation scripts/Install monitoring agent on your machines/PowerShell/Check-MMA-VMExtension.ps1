@@ -8,7 +8,7 @@
 $ErrorActionPreference = 'Stop'
 
 #variables
-$outputFolder = "C:\Temp\"              # Export folder
+$outputFolder = "D:\Temp\"              # Export folder
 $outputFileName = "ASC-outputFile.csv"  # Output file name (will be overwritten)
 $VMs = @()                              # To store all the VMs that I have access to with meta data, like MMA extension installed
 $VMproperties = $null                   # VM properties like subscriptionID
@@ -19,7 +19,7 @@ $VMs = @()                              # VM Output table
 #Get Azure subscriptions I have access to
 Write-Host "Running script, this can take a couple of minutes, please be patient..." -ForegroundColor Green
 Write-Host "Trying to get VMs..." -ForegroundColor Green  
-$mySubs = Get-AzContext -ListAvailable
+$mySubs = Get-AzContext # -ListAvailable
 foreach ($sub in $mySubs.Subscription)
 {
     Write-Output "`r`n"

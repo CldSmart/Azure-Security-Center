@@ -1,0 +1,5 @@
+Microsoft.Network/networkWatchers
+Microsoft.Portal/dashboards
+Microsoft.Compute/restorePointCollections
+Microsoft.Compute/disks
+Microsoft.Network/natGateways
